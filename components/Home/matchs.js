@@ -13,7 +13,7 @@ export default function Matchs() {
   const getButtonColors = (button) => {
     return selectedButton === button
       ? ['#4379F2', '#B0EBB4'] 
-      : ['#697565', '#697565']; 
+      : ['#9CA986', '#9CA986']; 
   };
 
   return (

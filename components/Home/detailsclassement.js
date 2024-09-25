@@ -28,6 +28,41 @@ export default function DetailsClassement() {
           <Text style={styles.tableCell}>النجم الرياضي الساحلي</Text>
           <Text style={styles.tableCell}>3</Text>
         </View>
+        <View style={styles.tableRow}>
+          <Text style={styles.tableCell}>22</Text>
+          <Text style={styles.tableCell}>القوافل الرياضية  بقفصة </Text>
+          <Text style={styles.tableCell}>4</Text>
+        </View>
+        <View style={styles.tableRow}>
+          <Text style={styles.tableCell}>20</Text>
+          <Text style={styles.tableCell}>الأمل الرياضي بحمام سوسة</Text>
+          <Text style={styles.tableCell}>5</Text>
+        </View>
+        <View style={styles.tableRow}>
+          <Text style={styles.tableCell}>18</Text>
+          <Text style={styles.tableCell}>المستقبل الرياضي برجيش</Text>
+          <Text style={styles.tableCell}>6</Text>
+        </View>
+        <View style={styles.tableRow}>
+          <Text style={styles.tableCell}>12</Text>
+          <Text style={styles.tableCell}>الملعب التونسي</Text>
+          <Text style={styles.tableCell}>7</Text>
+        </View>
+        <View style={styles.tableRow}>
+          <Text style={styles.tableCell}>11</Text>
+          <Text style={styles.tableCell}>المستقبل الرياضي بقابس</Text>
+          <Text style={styles.tableCell}>8</Text>
+        </View>
+        <View style={styles.tableRow}>
+          <Text style={styles.tableCell}>10</Text>
+          <Text style={styles.tableCell}>الاتحاد الرياضي بتطاوين</Text>
+          <Text style={styles.tableCell}>9</Text>
+        </View>
+        <View style={styles.tableRow}>
+          <Text style={styles.tableCell}>8</Text>
+          <Text style={styles.tableCell}>أوليمبيك باجة</Text>
+          <Text style={styles.tableCell}>10</Text>
+        </View>
       </View>
     </View>
   )

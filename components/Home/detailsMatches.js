@@ -18,6 +18,36 @@ export default function DetailsMatches() {
           <Text style={[styles.tableCell, styles.outlineText]}>12:00</Text>
           <Text style={styles.tableCell}>النادي الرياضي البنزرتي</Text>
         </View>
+        <View style={styles.tableRow}>
+          <Text style={styles.tableCell}>  النادي الرياضي الصفاقسي</Text>
+          <Text style={[styles.tableCell, styles.outlineText]}>12:00</Text>
+          <Text style={styles.tableCell}>  الاتحاد الرياضي المنستيري</Text>
+        </View>
+        <View style={styles.tableRow}>
+          <Text style={styles.tableCell}>  الاتحاد الرياضي ببنقردان</Text>
+          <Text style={[styles.tableCell, styles.outlineText]}>12:00</Text>
+          <Text style={styles.tableCell}>  المستقبل الرياضي بسليمان</Text>
+        </View>
+        <View style={styles.tableRow}>
+          <Text style={styles.tableCell}>  أوليمبيك باجة</Text>
+          <Text style={[styles.tableCell, styles.outlineText]}>12:00</Text>
+          <Text style={styles.tableCell}>  النجم الرياضي بالمتلوي</Text>
+        </View>
+        <View style={styles.tableRow}>
+          <Text style={styles.tableCell}>  الاتحاد الرياضي بتطاوين</Text>
+          <Text style={[styles.tableCell, styles.outlineText]}>12:00</Text>
+          <Text style={styles.tableCell}>  المستقبل الرياضي بقابس</Text>
+        </View>
+        <View style={styles.tableRow}>
+          <Text style={styles.tableCell}>  الملعب التونسي  </Text>
+          <Text style={[styles.tableCell, styles.outlineText]}>12:00</Text>
+          <Text style={styles.tableCell}>القوافل الرياضية بقفصة   </Text>
+        </View>
+        <View style={styles.tableRow}>
+          <Text style={styles.tableCell}> الأمل الرياضي بحمام سوسة </Text>
+          <Text style={[styles.tableCell, styles.outlineText]}>12:00</Text>
+          <Text style={styles.tableCell}>المستقبل الرياضي برجيش  </Text>
+        </View>
       </View>
     </View>
   )

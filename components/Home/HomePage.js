@@ -1,10 +1,11 @@
 import React, { useEffect, useRef } from 'react';
-import { View, Text, Animated, StyleSheet, Image } from 'react-native';
-import Navbar from '../Navbar';
+import { View, Text, Animated, StyleSheet, Image, ScrollView } from 'react-native';
 import ligue from '../../assets/LIGUE.jpg';
 import logo from '../../assets/logo.png';
 import Feature from './Feature';
 import Matchs from './matchs';
+import StartingMatches from './StartingMatches';
+
 const HomePage = () => {
   const spinValue = useRef(new Animated.Value(0)).current;
 
@@ -24,20 +25,22 @@ const HomePage = () => {
   });
 
   return (
-    <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.text}>Fantasy</Text>
-        <Animated.Image
-          source={logo}
-          style={[styles.logo, { transform: [{ rotate: spin }] }]}
-        />
-        <Text style={styles.text}>Tunisia</Text>
+    <ScrollView contentContainerStyle={styles.scrollViewContent}>
+      <View style={styles.container}>
+        <View style={styles.header}>
+          <Text style={styles.text}>Fantasy</Text>
+          <Animated.Image
+            source={logo}
+            style={[styles.logo, { transform: [{ rotate: spin }] }]}
+          />
+          <Text style={styles.text}>Tunisia</Text>
+        </View>
+        <Image source={ligue} style={styles.image} />
+        <Feature />
+        <Matchs />
+        <StartingMatches />
       </View>
-      <Image source={ligue} style={styles.image} />
-      <Feature />
-      <Matchs/>
-      <Navbar />
-    </View>
+    </ScrollView>
   );
 };
 
@@ -49,11 +52,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-start',
     backgroundColor: 'white',
+    paddingBottom: 80, 
+  },
+  scrollViewContent: {
+    alignItems: 'center',
   },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 50,
+    marginTop: 20,
   },
   text: {
     color: 'black',
