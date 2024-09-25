@@ -52,10 +52,10 @@ export default function Result() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, // Make the container fill the available space
+    flex: 1, 
   },
   gradient: {
-    flex: 1, // Ensure the gradient covers the entire container
+    flex: 1, 
   },
   titleContainer: {
     paddingVertical: 20,
@@ -66,13 +66,15 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center',
+    color:'white'
   },
   tableContainer: {
     flex: 1, 
     backgroundColor: 'rgba(0, 0, 0, 0.1)', 
     paddingHorizontal: 15,
     paddingVertical:20,
-    borderRadius:10
+    borderRadius:10,
+    
   },
   tableRow: {
     flexDirection: 'row',
@@ -82,10 +84,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 5,
     borderBottomWidth: 1,
     borderBottomColor: '#ddd',
+    
   },
   tableCell: {
     textAlign: 'center',
     flex: 1,
+    color:'white'
+
   },
   outlineText: {
     borderWidth: 1,
@@ -94,6 +99,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     textAlign: 'center',
     alignSelf: 'center',
+    
   },
   outlineText2: {
     marginBottom: 10,
@@ -104,5 +110,6 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     textAlign: 'center',
     alignSelf: 'center',
+    
   },
 });
