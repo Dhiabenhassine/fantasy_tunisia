@@ -18,7 +18,7 @@ export default function StartingMatches() {
       })
     ).start();
 
-    const targetDate = new Date('2024-09-21T11:00:00');
+    const targetDate = new Date('2024-10-04T11:00:00');
     const updateRemainingTime = () => {
       const now = new Date();
       const diff = targetDate - now;

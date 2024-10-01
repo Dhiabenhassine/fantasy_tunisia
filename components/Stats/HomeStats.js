@@ -118,6 +118,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
     borderRadius: 10,
     padding: 10,
+    marginBottom:'20%'
   },
   menuItem: {
     flexDirection: 'row',

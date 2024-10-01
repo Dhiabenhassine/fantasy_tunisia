@@ -4,10 +4,12 @@ import { LinearGradient } from 'expo-linear-gradient';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import logo from '../../assets/logo.png'; 
 import League from './league';
+import { useNavigation } from '@react-navigation/native';
 export default function HomeFantasy() {
   const spinValue = useRef(new Animated.Value(0)).current;
   const slideValue = useRef(new Animated.Value(0)).current;
   const slideTunisiaValue = useRef(new Animated.Value(0)).current;
+  const navigation = useNavigation()
 
   useEffect(() => {
     Animated.loop(
@@ -77,7 +79,7 @@ export default function HomeFantasy() {
               Tunisia
             </Animated.Text>
           </View>
-          <TouchableOpacity style={styles.centerUser}>
+          <TouchableOpacity style={styles.centerUser} onPress={()=>navigation.navigate("Profile")}>
             <Text style={styles.user}>Name User</Text>
             <Icon name="long-arrow-right" size={25} color="black" style={styles.icon} />
           </TouchableOpacity>
@@ -89,7 +91,7 @@ export default function HomeFantasy() {
           <View style={styles.view2}>
             <Text style={styles.week}>Game Week</Text>
             <View style={styles.view3}>
-              <TouchableOpacity style={styles.box3}>
+              <TouchableOpacity style={styles.box3} onPress={() => { navigation.navigate('TeamDetail')}}>
                 <Text style={styles.team}>Team</Text>
               </TouchableOpacity>
               <TouchableOpacity style={styles.box4}>

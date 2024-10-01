@@ -9,6 +9,7 @@ import Result from './components/Results/Result';
 import HomeFantasy from './components/Fantasy/HomeFantasy';
 import HomeStats from './components/Stats/HomeStats';
 import Profile from './components/Profile/Profile';
+import TeamDetail from './components/Fantasy/TeamDetail';
 const Stack = createStackNavigator();
 
 const App = () => {
@@ -45,6 +46,11 @@ const App = () => {
                  <Stack.Screen 
             name="Profile" 
             component={Profile} 
+            options={{ headerShown: false }} 
+          />
+                   <Stack.Screen 
+            name="TeamDetail" 
+            component={TeamDetail} 
             options={{ headerShown: false }} 
           />
         </Stack.Navigator>
